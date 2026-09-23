@@ -2,7 +2,7 @@
 
 password = "Python is awesome"
 
-entry = input().strip()
+entry = input()
 
 if entry == password:
     print("ACCESS GRANTED")
