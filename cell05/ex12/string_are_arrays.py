@@ -1,15 +1,12 @@
 #!/usr/bin/env python3
-
 import sys
 
-if len(sys.argv) == 2:
-    result = ""
-    for char in sys.argv[1]:
-        if char == "z":
-            result += "z"
-    if result:
-        print(result)
-    else:
-        print("none")
-else:
+if len(sys.argv) != 2:
     print("none")
+else:
+    text = sys.argv[1]
+    count = text.count('z')
+    if count == 0:
+        print("none")
+    else:
+        print("z" * count)  
